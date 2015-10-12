@@ -1,0 +1,9 @@
+/* CSS declarations go here */
+div.at-form {
+	margin: -220px -200px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    width: 400px;
+}
+
