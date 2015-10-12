@@ -19,10 +19,12 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 materialize:materialize@=0.97.0
-kadira:flow-router
 useraccounts:core
 accounts-password
 accounts-facebook
 accounts-google
 useraccounts:materialize
 useraccounts:flow-routing
+softwarerero:accounts-t9n
+kadira:flow-router
+meteorhacks:flow-layout
