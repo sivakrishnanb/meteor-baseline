@@ -4,12 +4,18 @@ AccountsTemplates.logout();
       if (state === "signIn") {
         // Successfully logged in
         // ...
-        alert('signed in')
+        setTimeout(function(){
+          alert('login success');
+          FlowRouter.go('/orders');
+        },1000)
       }
       if (state === "signUp") {
         // Successfully registered
         // ...
-        alert('signup success');
+        setTimeout(function(){
+          alert('please login now');
+          FlowRouter.go('/');
+        },1000)
       }
     }
   };
@@ -20,7 +26,7 @@ AccountsTemplates.logout();
 
   var myPostLogout = function(){
     //example redirect after logout
-    Router.go('/home');
+    FlowRouter.go('/');
   };
 
   AccountsTemplates.configure({

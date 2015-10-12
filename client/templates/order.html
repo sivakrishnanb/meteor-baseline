@@ -1,11 +1,7 @@
 <template name="order">  
-  {{#if isSubReady 'order'}}
     {{#with getOrder}}
-    <h2>{{OrderId}}, {{Name}}</h2>
+    <h2>{{name}}</h2>
     <p>Created at {{createdAt}}</p>
     <p>{{description}}</p>
     {{/with}}
-  {{else}}
-    Loading...
-  {{/if}}
 </template>  
